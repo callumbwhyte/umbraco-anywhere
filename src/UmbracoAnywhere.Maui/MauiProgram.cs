@@ -47,6 +47,7 @@ namespace UmbracoAnywhere.Maui
                 .AddUmbraco(builder.Configuration)
                 .AddConfiguration()
                 .AddUmbracoCore()
+                .AddHostingEnvironment<MauiHostingEnvironment>() // this maps the file system for Maui
                 .AddComposers()
                 .Build();
 

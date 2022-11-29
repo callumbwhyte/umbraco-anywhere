@@ -13,6 +13,7 @@ namespace UmbracoAnywhere.Function
                 .AddUmbraco(builder.GetContext().Configuration)
                 .AddConfiguration()
                 .AddUmbracoCore()
+                .AddHostingEnvironment<DefaultHostingEnvironment>() // this maps the file system
                 .AddComposers()
                 .Build();
         }

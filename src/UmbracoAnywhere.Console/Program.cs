@@ -19,6 +19,7 @@ namespace UmbracoAnywhere.Console
                         .AddUmbraco(context.Configuration)
                         .AddConfiguration()
                         .AddUmbracoCore()
+                        .AddHostingEnvironment<DefaultHostingEnvironment>() // this maps the file system
                         .AddComposers()
                         .Build();
                 })
